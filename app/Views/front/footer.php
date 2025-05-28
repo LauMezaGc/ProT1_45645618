@@ -39,22 +39,22 @@
 	    			<h4>
 	      				<a href="https://www.linkedin.com/" target="_blank">
 	      					<svg class="bi" width="32" height="32" fill="currentColor">
-								<use xlink:href="bootstrap-icons.svg#linkedin"/>
+								<use xlink:href="assets/icons/bootstrap-icons.svg#linkedin"/>
 							</svg>	      					
 	      				</a>
 	      				<a href="https://www.instagram.com/" target="_blank">
 	      					<svg class="bi" width="32" height="32" fill="currentColor">
-								<use xlink:href="bootstrap-icons.svg#instagram"/>
+								<use xlink:href="assets/icons/bootstrap-icons.svg#instagram"/>
 							</svg>	
 	      				</a>
 	      				<a href="https://www.youtube.com/" target="_blank">
 	      					<svg class="bi" width="32" height="32" fill="currentColor">
-								<use xlink:href="bootstrap-icons.svg#youtube"/>
+								<use xlink:href="assets/icons/bootstrap-icons.svg#youtube"/>
 							</svg>	
 	      				</a>
 	      				<a href="https://www.facebook.com/" target="_blank">
 	      					<svg class="bi" width="32" height="32" fill="currentColor">
-								<use xlink:href="bootstrap-icons.svg#facebook"/>
+								<use xlink:href="assets/icons/bootstrap-icons.svg#facebook"/>
 							</svg>	
 	      				</a>
 	      			</h4>
