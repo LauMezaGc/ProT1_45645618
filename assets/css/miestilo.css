@@ -14,7 +14,9 @@ header {
 }
 
 section {
-	padding: 20px; /* espaciado para la sección de 20 pixeles */
+	padding: 40px; /* espaciado para la sección de 20 pixeles */
+	padding-left: 10vw;
+	padding-right: 10vw;
 }
 
 footer {
@@ -55,4 +57,53 @@ nav ul li a {
 
 nav ul li a:hover {
 	background-color: #2f8247;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+footer h4 a:hover {
+	text-decoration: none;
+}
+
+footer .bi {
+	color: black;
+	transition: 0.2s;
+}
+
+footer .bi:hover {
+	color: white;
+		
+}
+
+/* pagina de inicio */
+
+#pag-principal #nosotros {
+	padding-top: 7%;
+	padding-bottom: 10%;
+	background-size: cover;
+
+	background-repeat: no-repeat;
+	background-image: url("../img/inicio_fondo.jpg");
+}
+
+#pag-principal #nosotros h1 {
+	color: #bbc82d;
+	text-shadow: 0px 0px 12px #000;
+}
+
+#pag-principal #productos {
+
+	background-color: #9ecc97;
+	border-width: 0px;
+	border-top-width: 10px;
+	border-bottom-width: 10px;
+	border-style: solid;
+	border-color: #69bd45;
 }
