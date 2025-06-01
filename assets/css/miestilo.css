@@ -6,16 +6,6 @@ body {
 	padding: 0;
 }
 
-.info_subtit {
-	text-align: center;
-	font-weight: bold;
-	font-style: italic;
-}
-
-.info {
-	background-color: #aaffdd;
-}
-
 header {
 	background-color: #69bd45;
 	color: #fff;
