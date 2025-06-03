@@ -14,14 +14,13 @@ class Home extends BaseController
             case "inicio":
                 echo view("front/principal");
                 break;
-            case "principal":
-            case "contacto":
-            case "terminos":
+            case "quienes":
+            case "acerca":
+            case "login":
                 echo view("front/".$nombre);
                 break;
-            case "tienda":
-            case "reembolso":
-            case "soporte":
+            case "terminos":
+            case "contacto":
             case "politica":
                 echo view("front/construccion");
                 break;

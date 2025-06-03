@@ -1,36 +1,15 @@
-	<style>
-		a {
-			color: black;
-			text-decoration: none;
-		}
-
-		a:hover {
-			text-decoration: underline;
-		}
-
-		.bi {
-			color: black;
-			transition: 0.2s;
-		}
-
-		.bi:hover {
-			color: grey;
-				
-		}
-	</style>
-
-	<footer class="mt-auto" style="background-color: #f0edec ;">
+	<footer class="mt-auto">
 		<div class="container text-center" style="margin-top: 2%;margin-bottom: 2%;">
 	  		<div class="row">
 	    		<div class="col" style="text-align: justify;">
-	      			<h5>TodoElectro</h5>
-	      				<p><a href="./principal">Inicio</a><p>
-	      				<p><a href="./productos">Productos</a><p>
-	      				<p><a href="./contacto">Contacto</a><p>
+	      			<h4>TodoElectro</h4>
+      				<p><a href="./principal">Inicio</a><p>
+      				<p><a href="./productos">Productos</a><p>
+      				<p><a href="./contacto">Contacto</a><p>
 	    		</div>
 
 	    		<div class="col" style="text-align: justify;">
-	    			<h5>Informacion</h5>
+	    			<h4>Informacion</h4>
 	    			<p><a href="./politica">Política de Privacidad</a><p>
 	      			<p><a href="./terminos">Terminos de uso</a><p>
 	    		</div>
