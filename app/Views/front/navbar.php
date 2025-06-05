@@ -2,7 +2,7 @@
 	<section class="container-fluid">
 		<nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4">
 		  <div class="container-fluid">
-		    <a class="navbar-brand" href="#" style="height: 70px;">
+		    <a class="navbar-brand" href="inicio" style="height: 70px;">
 		    	<img class="d-inline-block mw-100 h-100 p-3" src="assets/img/logo2.png">
 		    </a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
