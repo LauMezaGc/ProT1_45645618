@@ -17,6 +17,7 @@ class Home extends BaseController
             case "quienes":
             case "acerca":
             case "login":
+            case "registro":
                 echo view("front/".$nombre);
                 break;
             case "terminos":

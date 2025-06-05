@@ -3,15 +3,15 @@
 	  		<div class="row">
 	    		<div class="col" style="text-align: justify;">
 	      			<h4>TodoElectro</h4>
-      				<p><a href="./principal">Inicio</a><p>
-      				<p><a href="./productos">Productos</a><p>
-      				<p><a href="./contacto">Contacto</a><p>
+      				<p><a href="inicio">Inicio</a><p>
+      				<p><a href="inicio#productos">Productos Destacados</a><p>
+      				<p><a href="inicio#contacto">Contacto</a><p>
 	    		</div>
 
 	    		<div class="col" style="text-align: justify;">
 	    			<h4>Informacion</h4>
-	    			<p><a href="./politica">Política de Privacidad</a><p>
-	      			<p><a href="./terminos">Terminos de uso</a><p>
+	    			<p><a href="politica">Política de Privacidad</a><p>
+	      			<p><a href="terminos">Terminos de uso</a><p>
 	    		</div>
 
 	    		<div class="col">

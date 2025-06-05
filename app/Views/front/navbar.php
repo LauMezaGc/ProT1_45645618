@@ -11,24 +11,24 @@
 		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item dropdown">
-					  <a class="nav-link dropdown-toggle" href="./inicio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  <a class="nav-link dropdown-toggle" href="inicio" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					    Pagina Principal
 					  </a>
 					  <ul class="dropdown-menu">
-					    <li><a class="dropdown-item" href="./principal">Sobre Nosotros</a></li>
-					    <li><a class="dropdown-item" href="./inicio#quienessomos">Productos Destacados</a></li>
-					    <li><a class="dropdown-item" href="./inicio#quehacemos">Contacto</a></li>
+					    <li><a class="dropdown-item" href="inicio">Sobre Nosotros</a></li>
+					    <li><a class="dropdown-item" href="inicio#productos">Productos Destacados</a></li>
+					    <li><a class="dropdown-item" href="inicio#contacto">Contacto</a></li>
 					  </ul>
 					</li>
 
 					<li class="nav-item">
-					  <a class="nav-link" href="./tienda" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  <a class="nav-link" href="quienes" role="button">
 					    Quienes Somos
 					  </a>
 					</li>
 
 					<li class="nav-item">
-					  <a class="nav-link" href="./inicio/quehacemos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  <a class="nav-link" href="acerca" role="button">
 					    Acerca De
 					  </a>
 					</li>
@@ -36,14 +36,14 @@
 
 				<ul class="navbar-nav  mb-2 mb-lg-0">
 					<li class="nav-item">
-					  <a class="nav-link" href="./inicio#quehacemos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  <a class="nav-link" href="registro" role="button">
 					    Registrarse
 					  </a>
 					</li>
 
 					<li class="nav-item">
-					  <a class="nav-link" href="./inicio#quehacemos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					    Login
+					  <a class="nav-link" href="login" role="button">
+					    Iniciar Sesión
 					  </a>
 					</li>
 

@@ -84,11 +84,14 @@ footer .bi:hover {
 
 /* pagina de inicio */
 
-#pag-principal #nosotros, #pag-acerca {
+#pag-principal, #pag-acerca, #pag-quienes, #pag-error{
 	padding-top: 7%;
 	padding-bottom: 10%;
-	background-size: cover;
+}
 
+
+#pag-principal #nosotros, #pag-acerca {
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url("../img/inicio_fondo.jpg");
 }
