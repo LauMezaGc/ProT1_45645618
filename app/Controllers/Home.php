@@ -29,6 +29,6 @@ class Home extends BaseController
                 echo view("front/404");
                 break;
         }
-        echo view("front/footer.php");
+        echo view("front/footer");
     }
 }
