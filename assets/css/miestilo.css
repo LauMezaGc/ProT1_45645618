@@ -84,7 +84,7 @@ footer .bi:hover {
 
 /* pagina de inicio */
 
-#pag-principal, #pag-acerca, #pag-quienes, #pag-error{
+#pag-principal #nosotros, #pag-acerca, #pag-quienes, #pag-error{
 	padding-top: 7%;
 	padding-bottom: 10%;
 }
