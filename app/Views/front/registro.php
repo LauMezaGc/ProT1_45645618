@@ -27,7 +27,7 @@
 						</div>
 						<div class="mb-3">
 							<label for="exampleFormControlTextArea1" class="form-label">Apellido</label>
-							<input type="text" name="apellido" class="form-control" placeholder="apellido">
+							<input name="apellido" type="text" class="form-control" placeholder="apellido">
 								<!-- Error -->
 							<?php if($validation->getError('apellido')) {?>
 							<div class='alert alert-danger mt-2'>
@@ -37,7 +37,7 @@
 						</div>
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Email</label>
-							<input name="email" type="femail" class="form-control" placeholder="correo@algo.com">
+							<input name="email" type="text" class="form-control" placeholder="correo@algo.com">
 								<!--Error-->
 							<?php if($validation->getError('email')) {?>
 							<div class='alert alert-danger mt-2'>
@@ -48,7 +48,7 @@
 							<!-- usuario -->
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Usuario</label>
-							<input name="text" type="usuario" class="form-control" placeholder="usuario">
+							<input name="usuario" type="text" class="form-control" placeholder="usuario">
 								<!--Error-->
 							<?php if($validation->getError('usuario')) {?>
 							<div class='alert alert-danger mt-2'>
@@ -59,7 +59,7 @@
 							<!-- contraseña -->
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Contraseña</label>
-							<input name="pass" type="password" class="form-control" placeholder="contraseña">
+							<input name="password" type="password" class="form-control" placeholder="contraseña">
 								<!--Error-->
 							<?php if($validation->getError('password')) {?>
 							<div class='alert alert-danger mt-2'>

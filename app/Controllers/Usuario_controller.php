@@ -13,17 +13,17 @@
 			$data['titulo']='Registro';
 	        echo view("front/header", $data);
 	        echo view("front/navbar");
-			echo view("back/usuario/registro");
+			echo view("front/registro");
 	        echo view("front/footer");
 		}
 
 		public function formValidation() {
 			$input = $this->validate([
-				'nombre'	=> 'required|min_lenght[3]',
-				'apellido'	=> 'required|min_lenght[3]|max_lenght[25]',
-				'usuario'	=> 'required|min_lenght[3]',
-				'email'		=> 'required|min_lenght[4]|max_lenght[100]|valid_email|is_unique[usuarios.email]',
-				'pass'		=> 'required|min_lenght[3]|max_lenght[10]',
+				'nombre'	=> 'required|min_length[3]',
+				'apellido'	=> 'required|min_length[3]|max_length[25]',
+				'usuario'	=> 'required|min_length[3]',
+				'email'		=> 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email]',
+				'pass'		=> 'required|min_length[3]|max_length[10]',
 				],
 			);
 			$formModel = new Usuarios_model();
@@ -32,15 +32,15 @@
 				$data['titulo']='Registro';
 		        echo view("front/header", $data);
 		        echo view("front/navbar");
-				echo view("back/usuario/registro", ['validation' => $this->validator]);
+				echo view("front/registro", ['validation' => $this->validator]);
 		        echo view("front/footer");
 			} else {
 				$formModel->save([
-					'nombre' =>	$this->requeest->getVar('nombre'),
-					'apellido' =>	$this->requeest->getVar('apellido'),
-					'usuario' =>	$this->requeest->getVar('usuario'),
-					'email' =>	$this->requeest->getVar('email'),
-					'pass' =>	password_hash($this->requeest->getVar('pass'), PASSWORD_DEFAULT)
+					'nombre' =>	$this->request->getVar('nombre'),
+					'apellido' =>	$this->request->getVar('apellido'),
+					'usuario' =>	$this->request->getVar('usuario'),
+					'email' =>	$this->request->getVar('email'),
+					'pass' =>	password_hash($this->request->getVar('pass'), PASSWORD_DEFAULT)
 
 				]);
 
