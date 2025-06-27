@@ -24,7 +24,7 @@
 				'usuario'	=> 'required|min_length[3]',
 				'email'		=> 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email]',
 				'pass'		=> 'required|min_length[3]|max_length[10]',
-				],
+				]
 			);
 			$formModel = new Usuarios_model();
 
@@ -45,7 +45,7 @@
 				]);
 
 				session()->setFlashdata('success', 'Usuario registrado con exito');
-				return $this->response->redirect('/login');
+				return $this->response->redirect('registro');
 			}
 
 		}
