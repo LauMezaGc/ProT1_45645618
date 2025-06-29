@@ -89,4 +89,10 @@
 			</div>
 		</section>
 
+		<?php if(!empty (session()->getFlashdata('msg'))):?>
+			<script type="text/javascript">
+				alert(" <?=session()->getFlashdata('msg');?> ");
+			</script>
+		<?php endif?>
+
 	</main>
