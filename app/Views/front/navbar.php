@@ -1,3 +1,10 @@
+<?php
+	$session = session();
+	$nombre = $session->get('nombre');
+	$apellido = $session->get('apellido');
+	$perfil = $session->get('perfil_id');
+?>
+
 <header>
 	<section class="container-fluid">
 		<nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4">
@@ -34,8 +41,47 @@
 					</li>
 				</ul>
 
-				<ul class="navbar-nav  mb-2 mb-lg-0">
-					<li class="nav-item">
+
+				<ul class="navbar-nav  mb-2 mb-lg-0">			
+				<?php if($perfil == 1): ?>
+		    	<!-- NAVBAR PARA ADMINISTRADORES -->	
+	        		<li class="nav-item dropstart">
+	    	        	<div class="bi nav-item dropdown-toggle" role="button">	
+							<a class="nav-link" ><?php echo $nombre . ' ' . $apellido;?></a>
+							<svg data-bs-toggle="dropdown" aria-expanded="false" width="32" height="32" fill="currentColor">
+								<use xlink:href="assets/icons/bootstrap-icons.svg#person-fill-gear"/>
+							</svg>
+	    	        	</div>
+	        			<ul class="dropdown-menu">
+						    <li><hr class="dropdown-divider"></li>
+						    <li>
+						    	<a class=" dropdown-item nav-link" href="logout" role="button">
+									Cerrar Sesión
+								</a>
+							</li>
+						  </ul>
+			        </li>
+				<?php elseif($perfil == 2 ): ?>
+		    	<!-- NAVBAR PARA CLIENTES LOGUEADOS -->
+	    	        <li class="nav-item dropstart">	
+	    	        	<div class="bi nav-item dropdown-toggle" role="button">	
+							<a class="nav-link" ><?php echo $nombre . ' ' . $apellido;?></a>
+							<svg data-bs-toggle="dropdown" aria-expanded="false" width="32" height="32" fill="currentColor">
+								<use xlink:href="assets/icons/bootstrap-icons.svg#person-fill"/>
+							</svg>
+	    	        	</div>
+	        			<ul class="dropdown-menu">
+						    <li><hr class="dropdown-divider"></li>
+						    <li>
+						    	<a class=" dropdown-item nav-link" href="logout" role="button">
+									Cerrar Sesión
+								</a>
+							</li>
+						  </ul>
+			        </li>
+				<?php else:?>
+				<!-- NAVBAR SIN SESIÓN -->		
+			        <li class="nav-item">
 					  <a class="nav-link" href="registro" role="button">
 					    Registrarse
 					  </a>
@@ -46,7 +92,7 @@
 					    Iniciar Sesión
 					  </a>
 					</li>
-
+			     <?php endif;?>	    
 				</ul>
 
 				<form class="d-flex" role="search">
