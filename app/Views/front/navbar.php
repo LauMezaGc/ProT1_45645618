@@ -45,14 +45,12 @@
 				<ul class="navbar-nav  mb-2 mb-lg-0">			
 				<?php if($perfil == 1): ?>
 		    	<!-- NAVBAR PARA ADMINISTRADORES -->	
-	        		<li class="nav-item dropstart">
-	    	        	<div class="bi nav-item dropdown-toggle" role="button">	
-							<a class="nav-link" ><?php echo $nombre . ' ' . $apellido;?></a>
-							<svg data-bs-toggle="dropdown" aria-expanded="false" width="32" height="32" fill="currentColor">
-								<use xlink:href="assets/icons/bootstrap-icons.svg#person-fill-gear"/>
-							</svg>
-	    	        	</div>
+	        		<li class="nav-item dropstart">	
+						<svg class="bi nav-item dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" width="32" height="32" >
+							<use xlink:href="assets/icons/bootstrap-icons.svg#person-fill-gear"/>
+						</svg>
 	        			<ul class="dropdown-menu">
+	        				<li><a><?php echo $nombre . ' ' . $apellido;?></a></li>
 						    <li><hr class="dropdown-divider"></li>
 						    <li>
 						    	<a class=" dropdown-item nav-link" href="logout" role="button">
@@ -64,13 +62,11 @@
 				<?php elseif($perfil == 2 ): ?>
 		    	<!-- NAVBAR PARA CLIENTES LOGUEADOS -->
 	    	        <li class="nav-item dropstart">	
-	    	        	<div class="bi nav-item dropdown-toggle" role="button">	
-							<a class="nav-link" ><?php echo $nombre . ' ' . $apellido;?></a>
-							<svg data-bs-toggle="dropdown" aria-expanded="false" width="32" height="32" fill="currentColor">
-								<use xlink:href="assets/icons/bootstrap-icons.svg#person-fill"/>
-							</svg>
-	    	        	</div>
+	    	        	<svg class="bi nav-item dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" width="32" height="32">
+							<use xlink:href="assets/icons/bootstrap-icons.svg#person-fill"/>
+						</svg>
 	        			<ul class="dropdown-menu">
+						    <li><a><?php echo $nombre . ' ' . $apellido;?></a></li>
 						    <li><hr class="dropdown-divider"></li>
 						    <li>
 						    	<a class=" dropdown-item nav-link" href="logout" role="button">

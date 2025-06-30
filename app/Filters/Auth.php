@@ -7,7 +7,8 @@
 	class Auth implements FilterInterface {
 		public function before(RequestInterface $request , $arguments = null) {
 			if (!session()->get('logged-in')){
-				return redirect()->to('../login');
+				session()->setFlashdata('fail', 'Por favor, inicie sesión');
+				return redirect('login');
 			}
 		}
 

@@ -6,7 +6,7 @@
 	class Panel_controller extends Controller {
 
 		public function index() {
-			$session = session();
+			//$session = session();
 
 			$data['titulo']='Bienvenido';
 	        echo view("front/header", $data);

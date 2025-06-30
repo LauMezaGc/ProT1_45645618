@@ -29,8 +29,8 @@
 				$ba		= $data['baja'];
 
 				if ($ba == 'SI'){
-					$session->setFlashdata('msg', 'Disculpe. Este usuario se ha dado de baja.');
-					return $this->response->redirect('login');
+					$session->setFlashdata('fail', 'Disculpe. Este usuario se ha dado de baja.');
+					return redirect()->to('login');
 				}
 
 				$verify_pass = password_verify($password, $pass);
@@ -47,19 +47,21 @@
 						'logged_in' => TRUE
 					];
 
+					$session->set($ses_data);
+
 					$session->setFlashdata('msg', 'Bienvenido a TodoElectro!!');
-					return $this->response->redirect('login-correcto');
+					return redirect()->to('login-correcto');
 
 				} else {
 
-					$session->setFlashdata('msg', 'La contraseña es incorrecta.');
-					return $this->response->redirect('login');
+					$session->setFlashdata('fail', 'La contraseña es incorrecta.');
+					return redirect()->to('login');
 
 				}
 
 			} else {
-				$session->setFlashdata('msg', 'El mail no existe o es incorrecto.');
-				return $this->response->redirect('login');
+				$session->setFlashdata('fail', 'El mail no existe o es incorrecto.');
+				return redirect()->to('login');
 			}
 
 		}
@@ -68,7 +70,7 @@
 			$session = session();
 			$session->destroy();
 			$session->setFlashdata('msg', 'Sesión cerrada.');
-			return $this->response->redirect('inicio');
+			return redirect()->to('inicio');
 		}
 	}
 ?>
