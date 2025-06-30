@@ -48,7 +48,7 @@
 					];
 
 					$session->setFlashdata('msg', 'Bienvenido a TodoElectro!!');
-					return $this->response->redirect('inicio');
+					return $this->response->redirect('login-correcto');
 
 				} else {
 
@@ -67,6 +67,7 @@
 		public function logout() {
 			$session = session();
 			$session->destroy();
+			$session->setFlashdata('msg', 'Sesión cerrada.');
 			return $this->response->redirect('inicio');
 		}
 	}
