@@ -11,7 +11,7 @@
 						<div class="alert alert-danger"><?php echo session()->getFlashdata('fail');?></div>
 					<?php endif?>
 					<?php if(!empty (session()->getFlashdata('success'))):?>
-						<div class="alert alert-danger"><?php echo session()->getFlashdata('success');?></div>
+						<div class="alert alert-success"><?php echo session()->getFlashdata('success');?></div>
 					<?php endif?>
 
 					<div class="card-body" media="(max-width:768px)">

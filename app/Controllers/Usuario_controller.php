@@ -45,7 +45,7 @@
 				]);
 
 				session()->setFlashdata('success', 'Usuario registrado con exito');
-				return $this->response->redirect('registro');
+				return $this->response->redirect('login');
 			}
 
 		}

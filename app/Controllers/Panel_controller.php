@@ -11,7 +11,7 @@
 			$data['titulo']='Bienvenido';
 	        echo view("front/header", $data);
 	        echo view("front/navbar");
-			echo view("front/inicio");
+			echo view("front/principal");
 	        echo view("front/footer");
 		}
 	}
